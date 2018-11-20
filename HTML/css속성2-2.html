@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--border값은 바깥쪽으로 형성된다. border값이 포함된 div까지 면적을 계산해야 됨-->
+    <style>
+        body{
+            margin:0;
+            background:#dddddd;
+        }
+        div{
+            width:200px;
+            height:200px;
+            margin:10px;
+            padding:10px;
+            border:10px solid #ff8d00;
+        }
+        div:nth-child(1){
+            margin:0;
+            border:0;
+            padding:0;
+            background:#ff0000;
+        }
+        div:nth-child(2){
+            background:#00ff00;
+            box-sizing:border-box;  /*이렇게하면 border값이 box안쪽으로 형성됨*/
+        }
+        div:nth-child(3){
+            background:#0000ff;
+            box-sizing:content-box; /*box바깥쪽으로 border을 형성하게 함. 기본값*/
+        }
+    </style>
+</head>
+<body>
+    <div>200*200</div>
+    <div>200*200</div>
+    <div>200*200</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body div:nth-child(1){  /*기본적인 블록태그*/
+            width:100px;
+            height:100px;
+            background:#ff0000;
+            color:#ffffff;
+            font-weight:bold;
+            text-align:center;
+        }
+        body div:nth-child(2) {
+            width: 100px;
+            height: 100px;
+            background: #00ff00;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+        }
+        body div:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            background: #0000ff;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+        }
+        body div:nth-child(4) {
+            width: 100px;
+            height: 100px;
+            background: #ff0000;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            visibility:hidden;  /*이렇게하면 이 태그는 사라지지만 자리는 남아있음. display:none과 다름*/
+        }
+        body div:nth-child(5) {
+            width: 100px;
+            height: 100px;
+            background: #00ff00;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            display: inline; /*inline속성을 주게되면 위에 height값은 무시됨(높이가 무시됨). inline은 옆으로 붙음*/
+            margin: 10px 10px 10px 10px;    /*margin또한 상하는 적용 안됨. 좌우는 됨*/
+        }
+        body div:nth-child(6) {
+            width: 100px;
+            height: 100px;
+            background: #0000ff;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            display:inline;
+        }
+        body div:nth-child(7) {
+            width: 100px;
+            height: 100px;
+            background: #ff0000;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            display:none;   /*아예 화면에서 안보이게 됨. 공간도 아예 없어짐*/
+        }
+        body div:nth-child(8) {
+            width: 100px;
+            height: 100px;
+            background: #00ff00;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            display:inline;
+        }
+        body div:nth-child(9) {
+            width: 100px;
+            height: 100px;
+            background: #0000ff;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block; /*이렇게 되면 높이값을 가질 수 있음. 마진값도 ㅇㅇ*/
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        content1
+    </div>
+    <div>
+        content2
+    </div>
+    <div>
+        content3
+    </div>
+    <div>
+        content4
+    </div>
+    <div>
+        content5
+    </div>
+    <div>
+        content6
+    </div>
+    <div>
+        content7
+    </div>
+    <div>
+        content8
+    </div>
+    <div>
+        content9
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div{
+            width:800px;
+            margin:0 auto;
+            padding:20px;
+            background:#00ffff;
+        }
+
+        div:nth-child(1){
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    /*맨앞에 있는 폰트로 설정하되 사용자 컴퓨터에 해당 폰트가 없으면 다음 것으로 넘어감. 전부 없을경우 브라우저 디폴트 값으로 설정*/
+        }
+        div:nth-child(2){
+            font-family:'MingLiU_HKSCS-ExtB';
+        }
+        div:nth-child(3) {
+            font-family: 'MingLiU_HKSCS-ExtB';
+            font-size: 32px;
+        }
+        div:nth-child(4) {
+            font-family: 'Bernard MT';
+            font-size: 2.0em;
+        }
+        div:nth-child(5) {
+            font-family: 'Bernard MT';
+            font-style:italic;  /*글자를 이태릭채로 변경할 수 있음*/
+            font-size: 2.0em;
+            line-height:50px;   /*행간격을 조절하는 속성*/
+        }
+        div:nth-child(6) {
+            width:300px; height:300px;
+            background:red;
+            color:white;
+            font-size:4em;
+            font-weight:bold;
+            text-align:center;
+            line-height:300px;  /*가로축 가운데 정렬은 text-align을 주면 되지만 세로축 가운데 정렬은 따로 없기 때문에 이렇게 지정함. 
+                                    자신이 지정한 height값 만큼 line-height를 주면 가운데 정렬됨*/
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div>abcdefghijklnmopqrstuvwxyz <br />가나다라마바사아자차카타파하</div>
+    <div>abcdefghijklnmopqrstuvwxyz <br />가나다라마바사아자차카타파하</div>
+    <div>abcdefghijklnmopqrstuvwxyz <br />가나다라마바사아자차카타파하</div>
+    <div>abcdefghijklnmopqrstuvwxyz <br />가나다라마바사아자차카타파하</div>
+    <div>abcdefghijklnmopqrstuvwxyz <br />가나다라마바사아자차카타파하</div>
+
+    <div>button</div>
+</body>
+</html>

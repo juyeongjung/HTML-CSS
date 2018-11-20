@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body{
+            background:#dbd5d5;
+        }
+        div {
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid black;
+            text-align: center;
+            background:white;
+        }
+
+        #con {
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #header {
+            width: 1180px;
+            height: 150px;
+            line-height: 150px;
+        }
+
+        #nav {
+            width: 1180px;
+            height: 100px;
+        }
+
+        #nav ul {
+            overflow: hidden;
+        }
+
+        #nav ul li {
+            float: left;
+            width: 220px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            list-style: none;
+            border: 1px solid black;
+            margin:0 0.5px;
+        }
+        #nav ul li a{
+            text-decoration:none;
+        }
+        #nav ul li:hover{
+            color:blue;
+            font-size:22px;
+        }
+
+        #section {
+            width: 1180px;
+            overflow: hidden;
+        }
+        #left{
+            width:160px; height:600px;
+            float:left;
+            border:1px solid black;
+            
+        }
+        #login {
+            width: 150px;
+            height: 200px;
+            float: left;
+            margin: 0 auto;
+        }
+        #sidebar {
+            width: 150px;
+            height: 370px;
+            margin: 220px auto auto auto;
+        }
+
+        #content {
+            width: 820px;
+            height: 600px;
+            float: left;
+        }
+        
+        #content1{
+            width:795px;
+            overflow:hidden;
+            border:1px solid black;
+            font-size:1.2em;    /*p태그의 속성을 변경하지 않아도 div선에서 해결가능한듯?*/
+        }
+        #content1 img{
+            width:300px; height:200px;
+            float:left;
+        }
+        #content2 {
+            width: 795px; height:150px;
+            border: 1px solid black;
+            font-size: 1.1em; /*p태그의 속성을 변경하지 않아도 div선에서 해결가능한듯?*/
+        }
+        #content3 {
+            width: 795px;
+            border: 1px solid black;
+
+        }
+        #content3 a{
+            text-decoration:none;
+            color:blue;
+            font-size: 1.2em;
+        }
+        #content3 a::after{
+            content:'-'attr(href);
+        }
+        #banner {
+            width: 130px;
+            height: 600px;
+            float: left;
+        }
+        #banner img{
+            width:125px; height:40px;
+        }
+
+        #footer {
+            clear:both;
+            width: 1180px;
+            height: 100px;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="con">
+        <div id="header">
+            HEADER
+        </div>
+
+        <div id="nav">
+            <p>NAVIGATION</p>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+            </ul>
+        </div>
+
+        <div id="section">
+            <div id="left">
+                <div id="login">
+                    <h3>LOGIN</h3>
+                    <form action="#" method="post">
+                        아이디:  <input type="text" name="uid" size="7" /><br />
+                        비밀번호: <input type="password" name="upw" size="5" /><br />
+                        <input type="submit" name="login" value="로그인" />
+                    </form>
+                </div>
+                <div id="sidebar"></div>
+            </div>
+            <div id="content">
+                <h3>CONTENT</h3>
+                <div id="content1">
+                    <img src="img\caution.png" alt="Alternate Text" />
+                    <p>주의 <br /> 매우 힘들 수 있으니 마음 단단히 먹으십쇼. <br /> get busy livin' or get busy dyin' <br />후회는 없다만 미련은 있다.. 나의 꿈은..</p>
+                </div>
+                <div id="content2">
+                    <p>Bow down and smile yeah you'll get used to it My crwon my style I'm locked and loaded Pay the price for my paradise yeah ya'll know what it is Ride all night actin stupid
+                    Money is my mother power is my father fall down on your knees when you see me walk on water</p>
+                </div>
+                <div id="content3">
+                    <a href="http://www.google.com" target="_blank">google</a><br />
+                    <a href="http://www.naver.com" target="_blank">naver</a><br />
+                    <a href="http://www.melon.com" target="_blank">melon</a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <h3>BANNER</h3>
+                <img src="https://s.pstatic.net/static/www/mobile/edit/2018/0205/mobile_204754107714.png" alt="olympic" />
+                <img src="https://ssl.pstatic.net/tveta/libs/1188/1188154/843a04d49ef1310a74fc_20180201172452071.jpg" alt="Alternate Text" />
+                <img src="https://ssl.pstatic.net/tveta/libs/1188/1188215/488e12a0cb6ad1eac86c_20180131174804313.jpg" alt="Alternate Text" />            
+            </div>
+        </div>
+
+        <div id="footer">
+            FOOTER
+        </div>
+    </div>
+</body>
+</html>

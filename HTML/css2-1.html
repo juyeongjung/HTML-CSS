@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{  /*전체 선택자. 전체 레이아웃을 잡을때 많이사용*/
+            background:#000000;
+            color:#00ff90;
+            margin:10px;padding:10px;
+        }
+      li,p,h1{  /*여러개를 동시에 바꿀때는 ","로 이어서 지정하면 됨*/
+          color:#ffd800;
+      }
+      h1{
+          color:#00ff90;    /*위에 선언된것에 덮어씌워 짐. 밑에 선언한 것 반영*/
+          text-decoration: underline;   /*밑줄을 그을 수 있음*/
+      }
+      p{
+          font-weight:bold; /*폰트의 두께 설정*/
+      }
+      footer{border:2px dashed #000000;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>oo주식회사</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>회사소개</li>
+            <li>제품소개</li>
+            <li>고객센터</li>
+            <li>공지사항</li>
+        </ul>
+    </nav>
+
+    <section>
+        <p>
+            우리회사는 50년 전통의 역사와 뛰어난 기술을 바탕으로 만들어진 좋은 회사입니다.
+        </p>
+    </section>
+
+    <footer>
+        <p>
+            서울시 ㅇㅇ구 ㅇㅇ동 ㅇㅇ빌딩
+        </p>
+    </footer>
+</body>
+</html>

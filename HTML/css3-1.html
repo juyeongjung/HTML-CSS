@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /*속성선택자. 각 태그의 속성값 스타일을 변경해 줌. 대괄호를 통해 type 설정*/
+        input{
+            color: green;
+            font-size:30px;
+            font-weight:bold;
+        }
+        input[type=text]{   /*타입이 조건에 만족되는 것들만 적용*/
+            color:olive;
+            font-size:50px;
+            width:200px;
+        }
+        input[type=tel]{
+            color:darkslateblue;
+        }
+        img[src]{
+            border:5px solid green;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="post">
+        이름: <input type="text" name="name" value="" /><br />
+        아이디: <input type="text" name="name" value="" /><br />
+        비밀번호: <input type="password" name="name" value="" /><br />
+        전화번호: <input type="tel" name="name" value="" /> <br />
+    </form>
+
+    <img src="http://www.sba.seoul.kr/kr/img/img_logo_seoul02.png" alt="I SEOUL YOU" />
+</body>
+</html>

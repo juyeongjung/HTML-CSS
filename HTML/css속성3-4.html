@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #red{
+            width:100px; height:100px;
+            background:red;
+        }
+        #yellow{
+            width:400px; height:400px;
+            background:yellow;
+            position:relative;  /*red와 관련됨. red로 부터 100씩 떨어진 곳에 만들어짐*/
+            top:100px; left:100px;
+        }
+        #green{
+            width:100px; height:100px;
+            background:green;
+            position:relative;  /*yellow에 종속되어 있기 때문에 yellow를 기준으로 움직임*/
+            top:0; left:100px;
+        }
+        #blue{
+            width:100px; height:100px;
+            background:blue;
+            position:relative;
+            top:100px; left:100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="red"></div>
+    <div id="yellow">
+        <div id="green"></div>
+        <div id="blue"></div>
+    </div>
+</body>
+</html>

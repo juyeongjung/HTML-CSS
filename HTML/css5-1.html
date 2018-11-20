@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #header{
+            border-bottom:1px solid #cccccc;
+        }
+        #content a{
+            text-decoration:none;
+        }
+        #content a::after { /*링크 선택자*/
+            content: '-'attr(href); /*뒤에 주소값을 자동으로 붙여주는 함수*/
+        }
+        #content li:not(.fa){   /*부정선택자. 선택된 것을 제외한 것을 변경함 (li중에서)*/
+            background:yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>weekly connect websites</h1>
+        </div>
+
+        <div id="content">
+            <ul>
+                <li><a href="http://www.sba.seoul.kr" target="_blank">서울산업진흥원</a></li>
+                <li class="fa"><a href="http://www.wiz.center" target="_blank">위즈센터</a></li>
+                <li><a href="http://www.naver.com" target="_blank">네이버</a></li>
+                <li class="fa"><a href="http://www.google.com" target="_blank">구글</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

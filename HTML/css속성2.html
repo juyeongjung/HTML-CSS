@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body{
+            margin:0;
+        }
+        div{
+            width:200px; height:200px;
+            color:#ffffff;
+            font-weight:bold;
+            text-align:center;
+            border:2px solid black;
+        }
+        #content1{
+            background:red;
+        }
+        #content2{
+            background:green;
+            margin: 10px;
+        }
+        #content3{
+            background:blue;    
+            padding:10px;   /*순서는 상 우 하 좌 순. 값이 두개일땐 앞에 것이 상하 뒤에 것이 좌우. 세개면 우측값을 왼쪽에도 적용함*/ 
+        }
+        #contetn4{
+            background:yellow;
+            margin:10px;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <!--margin은 자신이 만든 공간 밖으로 투명한 여백이 생기지만
+    padding은 자신이 만든 공간의 색깔과 같은 여백이 생성됨. 글씨는 원래크기의 공간부터 작성됨-->
+    <div id="content1">
+        <p>200*200</p>
+    </div>
+    <div id="content2">
+        <p>200*200 <br />margin</p>
+    </div>
+    <div id="content3">
+        <p>200*200 <br />padding</p>    <!--background가 원본보다 커진것을 볼 수 있음-->
+    </div>
+    <div id="contetn4">
+        <p>200*200 <br />margin <br />padding</p>
+    </div>
+</body>
+</html>

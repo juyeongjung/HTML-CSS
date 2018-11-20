@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div{
+            margin:5px; padding:5px;
+            border:1px solid black;
+            text-align:center;
+        }
+        #con{
+            width:1000px;
+            margin:0 auto;
+            overflow:hidden;
+        }
+        #header{
+            width:980px; height:100px;
+            line-height:100px;    
+        }
+        #nav {
+            width: 980px; height:100px;
+        }
+        #nav ul{    /*nav menu list 가운데 정렬 어떻게 하는지 모르겟음*/
+            width:auto;
+            overflow: hidden;
+        }
+        #nav ul li{
+            width:175px; height:40px;
+            line-height:40px;
+            text-align:center;
+            font-weight:bold;
+            list-style:none;
+            float:left; /*왼쪽정렬이라 왼쪽 마진값을 주는방법 일단...*/
+            border:1px solid black;
+            margin:0 1px;
+        }
+        #section {
+            width: 980px;
+            overflow: hidden;
+        }
+        #content {
+            width: 735px; height: 400px;
+            float: left;
+        }
+        #banner {
+            width: 200px; height: 400px;
+            float: left;
+        }
+        #footer {
+            width: 980px; height: 100px;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="con">
+        <div id="header">
+            HEADER
+        </div>
+
+        <div id="nav">
+            <p>NAVIGATION</p>
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+                <li>menu5</li>
+            </ul>
+        </div>
+
+        <div id="section">
+            <div id="content">
+                <h3>CONTENT</h3>
+            </div>
+
+            <div id="banner">
+                <h3>BANNER</h3>
+            </div>
+        </div>
+
+        <div id="footer">
+            FOOTER
+        </div>
+    </div>
+</body>
+</html>

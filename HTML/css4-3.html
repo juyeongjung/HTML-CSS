@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /*여러번 쓰이거나 여러번 쓰일 가능성이 있는 것은 class로 묶고, 단 하나인 것에는 id를 쓰자*/
+
+        #header, #content, #footer {
+            width: 1000px;
+            margin: 0 auto; /*가운데 정렬하는 기본적인 방법. 많이 사용됨*/
+            overflow: hidden;
+        }
+        #header .left_space, #content .left_space, #footer .left_space{ /*클래스, 아이디 선택자를 사용하여 원하는 것을 정확히 선택하기*/
+            width:150px; height:150px;
+            float:left;
+            background:#f3f3f3;
+            border:1px solid #cccccc;
+        }
+         #header .center_space, #content .center_space, #footer .center_space{  /* "."앞에 스페이스 꼭 있어야 함!!! */
+            width:694px; height:150px;
+            float:left;
+            background:#f3f3f3;
+            border:1px solid #cccccc;
+        }
+        #header .right_space, #content .right_space, #footer .right_space{
+            width:150px; height:150px;
+            float:right;
+            background:#f3f3f3;
+            border:1px solid #cccccc;
+        }
+        #header .left_space, #footer .right_space{
+            border-radius:30px 0;   /*좌상단 우하단 30px씩 준거임*/
+        }
+        #header .right_space, #footer .left_space{
+            border-radius: 0 30px;
+        }
+        #content .left_space{
+            border-radius:0 30px 30px 0;
+            height:300px;
+        }
+        #content .right_space{
+            border-radius:30px 0 0 30px;
+            height: 300px;
+        }
+        #header .center_space{
+            border-radius:0 0 30px 30px;
+        }
+        #content .center_space{
+            border-radius:30px;
+            height:300px;
+        }
+        #footer .center_space{
+            border-radius:30px 30px 0 0;
+        }
+       
+        #content .center_space ul li{   /*후손선택자 사용*/
+            list-style:none;
+            float:left;
+            padding:0 40px;
+            font-weight:bold;
+            font-size:20px;
+        }
+        #content .center_space ul li:hover { /*반응선택자는 일반속성 위에 있어아 하는듯?*/
+            color: black;
+            font-size: 30px;
+        }
+      
+        #content .hiseoul{
+            clear:both;
+            padding:10px;   /*상하좌우 간격을 조정*/
+        }
+    </style>
+</head>
+<body>
+    <!--웹페이지는 가로로 한 덩어리씩 끊어서 이해하기!-->
+    <div id="header">
+        <div class="left_space"></div>
+        <div class="center_space"></div>
+        <div class="right_space"></div>
+    </div>
+
+    <div id="content">
+        <div class="left_space"></div>
+        <div class="center_space">
+            <div>
+                <ul>
+                    <li>menu1</li>
+                    <li>menu2</li>
+                    <li>menu3</li>
+                    <li>menu4</li>
+                </ul>
+            </div>
+            <div class="hiseoul">
+                <h1>하이서울브랜드</h1>
+                <p>서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나
+                고유 브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업 공동브랜드인하이서울브랜드를 활용하여 제품졍쟁력을
+                강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.</p>
+            </div>
+        </div>
+        <div class="right_space"></div>
+    </div>
+    <div id="footer">
+        <div class="left_space"></div>
+        <div class="center_space"></div>
+        <div class="right_space"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form action="#" method="get">
+        <!--action은 양식을 보낼 곳. method는 정보가 가는 방식을 선택함.
+            get: 내가 입력한 정보값이 도메인에 붙어서 서버로 전송되는 방식(노출o 정보은닉x)
+            post: 내가 입력한 정보값이 헤더에 암호화 되어 서버로 전송됨(노출x 정보은닉o)
+            디폴트 값은 get-->
+        이름: <input type="text" name="uname" /><br />    <!--name속성은 서버에서 사용자가 입력한 값을 가져올 때(사용할 때) 쓰는 이름-->
+        
+        아이디: <input type="text" name="uid" /><br />
+        
+        비밀번호:<input type="password" name="upw" /><br /> <!--패스워드 형식은 안보이게 다른 문자로 처리됨-->
+        
+        연락처: <input type="tel" name="uphone1" size="5" />- <!--size: 몇글자가 들어갈수 있는지 결정. 칸의 크기-->
+        <input type="text" name="uphone2" size="5" />-
+        <input type="text" name="uphone3" size="5" /><br />
+        
+        사진: <input type="file" name="upic" /><br />
+        
+        성별구분: <input type="radio" name="gender" value="m" />남   <!--radio: n개중에 1개만 선택가능할 때 사용-->
+        <input type="radio" name="gender" value="w" />여<br />       <!--name의 name은 같고 value값만 달라야 함-->
+        
+        사용언어: <input type="checkbox" name="lan" value="kor" checked="checked" />한글  <!--checkbox: n개중에 n개 선택가능. checked는 기본으로 체크될 값을 정할 수 있음-->
+                 <input type="checkbox" name="lan" value="eng" checked="checked" />영어   <!--name도 같아야함!!-->
+                 <input type="checkbox" name="lan" value="jap" checked="checked" />일본어
+                 <input type="checkbox" name="lan" value="chi" checked="checked" />중국어<br />
+        
+        자기소개: <textarea rows="5" cols="20">간단하게 입력하세요.</textarea><br /> <!--row: 5행 col: 글자수-->
+        
+        국적: <select>    <!--하나만 선택가능-->
+                <option>KOREA</option>
+                <option>USA</option>
+                <option>JAPAN</option>
+                <option>CHINA</option>
+
+            </select><br />
+        
+        좋아하는음식: <select multiple="multiple">    <!--multiple 선택값을 주면 n개 선택 가능-->
+                    <option>김치</option>
+                    <option>불고기</option>
+                    <option>파전</option>
+                    <option>비빔밥</option>
+            </select><br />
+
+        <input type="submit" /> <!--action에 지정한 곳으로 전송됨-->
+    </form>
+</body>
+</html>

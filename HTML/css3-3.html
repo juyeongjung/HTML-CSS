@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        h3~div{ /*동위선택자
+                    h3과 동등한 위치에 있는 div를 찾아 모두 변경하는 것이 "~"
+                    자신과 동등한 위치에 있는 태그 중에 해당되는 모든 태그를 선택(여러개)
+                    동등한 위치란 어디 종속되어 있지 않고 같은 간격 안에 위치해있는 것을 말함
+                */
+            font-size:30px;
+            color:orange;
+        }
+        h3+div { /*h3과 동등한 위치에 있는 div중 h3바로 밑에 있는 div만 변경하는 것이 "+"
+                     자신과 동등한 위치에 있는 태그 중에 자신 바로 밑에 있는, 해당되는 태그만 선택(1개)
+                   */
+            font-size: 50px;
+            font-weight: bold;
+            color: blue;
+        }
+        #title~div{
+            background:yellow;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="title">동위 선택자 (+,~)</h3>
+    <div>div01</div>
+    <div>div02</div>
+    <div>div03</div>
+    <div>div04</div>
+    <div>div05</div>
+</body>
+</html>

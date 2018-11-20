@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #container{
+            width:800px;
+            margin:0 auto;
+            border:1px solid #cccccc;
+        }
+        #header{
+            height:50px;
+            background:#cccccc;
+        }
+        #wrap{
+            height:200px;
+            position:relative;  /*wrap안에 있는 요소들의 absolute값을 주기 위해선 감싸고 있는 요소의 position을 relative로 주어아 햠!!
+                                이 값이 없을 경우 브라우저 기본값을 바탕으로 페이지 좌상단부터 기준을 잡게 됨. 필수 그냥 암기*/
+        }
+        #content1{
+            width:100px; height:100px;
+            background:red;
+            border:2px dashed green;
+            position:absolute;
+            top:10px; left:10px;
+            z-index:20; /*깊이값을 설정하는 속성. 숫자가 클수록 위에 놓임*/
+        }
+        #content2{
+            width:100px; height:100px;
+            background:yellow;
+            border:2px dashed green;
+            position:absolute;
+            top:50px; left:50px;
+            z-index:10;
+        }
+        #footer{
+            height:50px;
+            background:#cccccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">HEADER</div>
+        <div id="wrap">
+            <div id="content1">content1</div>
+            <div id="content2">content2</div>
+        </div>
+        <div id="footer">FOOTER</div>
+    </div>
+</body>
+</html>

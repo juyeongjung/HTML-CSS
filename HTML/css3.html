@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--아이디와 클래스는 거의 같은 용도
+    여러번 쓰이거나 여러번 쓰일 가능성이 있는 것은 class로 묶고, 단 하나인 것에는 id를 쓰자
+    id를 선택할때는 #을 사용
+    class를 선택할때는 .을 사용-->
+    <style>
+        #header {
+            /*width:500px;*/
+            background: #ffd800;
+            border: 1px solid #808080; /*테두리 설정 속성. solid는 실선*/
+            text-align: center; /*정렬을 어떻게 할것인지 지정하는 속성*/
+            font-size: 2em; /*1em이 기본값. 배수로 뜀. 2em이면 두배. 1.5em이면 1.5배 커짐*/
+        }
+
+        #wrap {
+            /*width:500px;*/
+            background: #00ffff;
+            border: 2px solid #808080;
+            text-align: center;
+            overflow: hidden; /*float속성을 주기위해서 감싸고 있는 div에 ovdrflow속성을 주어야 함*/
+        }
+
+        #contents {
+            float: left; /*정렬. 감싸고 있는 덩어리 안에서 왼쪽에 붙이겠다는 것임. 왼쪽으로 붙음*/
+            width: 200px;
+            border: 1px solid red;
+        }
+
+        #section {
+            float: left;
+            width: 1200px;
+            border: 1px solid red;
+        }
+
+        #side_banner {
+            float: right;
+            border: 1px solid red;
+        }
+
+        #footer {
+            clear: both; /*float의 속성이 이어지는 것을 방지하기위해 비워주는 속성*/
+            /*width: 500px;*/
+            background: #ffd800;
+            border: 3px solid #808080;
+            text-align: center;
+        }
+
+        li {
+            color: #000000;
+        }
+
+        .menu1 {
+            color: #0026ff;
+            font-weight: bold;
+        }
+
+        .menu2, .menu3, .menu5 {
+            color: #808080;
+            font-size: 20px;
+        }
+
+        ol li.menu { /*ol안에 li안에 있는 menu클래스만 변경*/
+            color: #ff006e;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>HEADER</h1>
+    </div>
+    <div id="wrap">
+        <div id="contents">
+            <h1>CONTENT</h1>
+            <ul>
+                <li class="menu1">menu1</li>
+                <li class="menu2">menu2</li>
+                <li class="menu3">menu3</li>
+                <li class="menu4">menu4</li>
+                <li class="menu5">menu5</li>
+            </ul>
+            <ol>
+                <li class="menu">menu1</li>
+                <li class="menu2">menu2</li>
+                <li class="menu">menu3</li>
+                <li class="menu4">menu4</li>
+                <li class="menu">menu5</li>
+            </ol>
+        </div>
+        <div id="section">
+            <p>메인메인메인 <hr />본문본문본문 <hr />메인메인메인 <hr />본문본문본문 <hr />메인메인메인 <hr />본문본문본문 <hr />메인메인메인 <hr />본문본문본문 <hr />메인메인메인 <hr />본문본문본문 <hr />메인메인메인 <hr />본문본문본문</p>
+        </div>
+        <div id="side_banner">
+            <h1>BANNER</h1>
+            <img src="http://www.sba.seoul.kr/kr/img/img_logo_seoul02.png" alt="Alternate Text" />
+        </div>
+    </div>
+
+    <div id="footer">
+        <h1>FOOTER</h1>
+    </div>
+</body>
+</html>

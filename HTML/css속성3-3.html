@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div{
+            width:100px; height:100px;
+            opacity:0.7;
+        }
+        div:nth-child(1){
+            background:#ff0000; 
+            position:fixed;  /*위치가 고정되어 스크롤의 영향을 받지 않고 자기자리에 있음. 화면 축소시켜서 해봐*/
+            top:0; left:0;      /*절대값을 지정함. 좌상단이 기준*/
+        }
+        div:nth-child(2){
+            background:#00ff00; 
+            position:absolute;   /*기준점이 브라우저(좌상단)*/
+            top:50px; left:50px;    /*위에서 50px, 밑에서 50px만큼 떨어짐*/
+        }
+        div:nth-child(3){
+            background:#0000ff;
+            position:absolute;  
+            top:100px; left:100px;
+        }
+        div:nth-child(4) {
+            background: #808080;
+            position: absolute;   
+            top: 150px;
+            left: 150px;
+        }
+        #wrap{
+            width:300px; height:300px;
+            position:absolute;
+            top:200px; left:200px;
+            background:yellow;
+            opacity:1.0;
+        }
+        #wrap .content{
+            width:100px; height:100px;
+            position:absolute;  /*이렇게되면 기준점이 자신 직접적으로 감싸고 있는 태그의 좌상단이 기준이 됨. 감싸고 있는 태그의 위치가 바뀌면 같이 따라서 바뀜*/
+            top:100px; left:100px;
+            background:red;
+            opacity:1.0;
+        }
+        div:nth-child(5){
+            background:black;
+            position:static;    /*position값을 안주면 기본으로 설정되는 값. top,left값 의미 없음. */
+            top:500px;left:500px;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div>static</div>
+    <div id="wrap">
+        <div class="content"></div>
+    </div>
+
+</body>
+</html>

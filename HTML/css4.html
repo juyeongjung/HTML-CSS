@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div{
+            width:600px; background:black; margin:0 auto; /*margin이란 상하좌우 공백을 동등하게 띄어주는 속성
+                                                        margin:0000하면 순서대로 상,우,하,좌(시계방향) 순으로 값을 지정함
+                                                        margin:00하면 앞에 값이 상,하 값을 지정하고 뒤에 값이 좌, 우를 지정함
+                                                        auto를 주게되면 자동으로 같은 간격 값이 설정*/
+        }
+        ul > li{ /*자손선택자*/
+            font-size:30px;
+            font-weight:bold;
+            color:orange;
+        }
+        li:hover{   /*반응선택자(hover). 마우스를 올렸을 때 상태가 변함*/
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+        </ul>
+    </div>
+</body>
+</html>
